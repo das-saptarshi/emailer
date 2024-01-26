@@ -1,10 +1,10 @@
-package com.saptarshi.das.mailer;
+package com.saptarshi.das.eurekaservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EmailerApplicationTests {
+class EurekaServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
