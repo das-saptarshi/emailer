@@ -1,13 +1,13 @@
-package com.saptarshi.das.emailer;
+package com.saptarshi.das.mailer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmailerApplication {
+public class MailerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmailerApplication.class, args);
+		SpringApplication.run(MailerApplication.class, args);
 	}
 
 }
