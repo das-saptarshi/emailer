@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 @Entity
 @Accessors(chain = true)
 @Table(name = "APP_USER")
-public class User {
+public class User extends BaseEntity {
     private Name name;
     private String email;
     private String password;
