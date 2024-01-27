@@ -7,14 +7,18 @@
 		<artifactId>mailer</artifactId>
 		<version>1.0.0</version>
 	</parent>
+
 	<artifactId>eureka-service</artifactId>
 	<version>1.0.0</version>
 	<name>Eureka Service</name>
 	<description>Eureka Service</description>
+
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+
 	<dependencies>
+		<!--	Cloud Dependencies	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -24,6 +28,7 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
