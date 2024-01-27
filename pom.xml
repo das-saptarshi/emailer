@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.saptarshi.das</groupId>
 	<artifactId>mailer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>Mailer Service</name>
 	<description>Project to Automate Periodical Mailing</description>
@@ -41,23 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
@@ -79,6 +62,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<modules>
+		<module>core</module>
 		<module>eureka-service</module>
 		<module>user-management-service</module>
 	</modules>
