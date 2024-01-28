@@ -19,12 +19,13 @@ import java.util.UUID;
 @Accessors(chain = true)
 public class BaseEntity {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column
+    @Column(name = "created_at")
     private OffsetDateTime createdAt;
 
-    @Column
+    @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
 }
