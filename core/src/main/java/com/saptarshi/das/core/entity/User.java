@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Data
 @Entity
 @Accessors(chain = true)
-@Table(name = "APP_USER", indexes = @Index(columnList = "email"))
+@Table(name = "APP_USER", indexes = @Index(columnList = "user_email"))
 @EqualsAndHashCode(callSuper = true)
 public class User extends BaseEntity {
     @Column(name = "user_name")
