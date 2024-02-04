@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway-service
+  cloud:
+    discovery:
+      locator:
+        enabled: true
+    gateway:
+      routes:
+        - id: user-management-service
+          predicates:
+            - Path=/api/users/**
+          uri: lb://user-management-service
+          filters:
+            - RewritePath=/api/users/(?<segment>.*),/users/$\{segment}
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8671/eureka
