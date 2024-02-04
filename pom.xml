@@ -22,32 +22,12 @@
 	</properties>
 
 	<dependencies>
-		<!--	Web Dependencies	-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
 		<!--	Helper Dependencies	-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.30</version>
 			<optional>true</optional>
-		</dependency>
-
-		<!--	Documentation Dependencies	-->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.2.0</version>
 		</dependency>
 
 		<!--	Test Dependencies	-->
@@ -57,6 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
@@ -80,6 +61,7 @@
 	<modules>
 		<module>core</module>
 		<module>eureka-service</module>
+		<module>api-gateway-service</module>
 		<module>user-management-service</module>
 	</modules>
 </project>
